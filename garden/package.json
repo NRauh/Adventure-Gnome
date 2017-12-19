@@ -6,7 +6,8 @@
   "author": "Nate Rauh",
   "license": "MIT",
   "scripts": {
-    "dev-server": "nodemon index.js"
+    "dev-server": "nodemon index.js",
+    "test": "jest"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -15,6 +16,7 @@
     "sqlite3": "^3.1.13"
   },
   "devDependencies": {
+    "jest": "^22.0.1",
     "nodemon": "^1.13.3"
   }
 }
