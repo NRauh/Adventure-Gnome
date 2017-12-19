@@ -1,6 +1,12 @@
 const express = require('express');
-const app = express();
+const bodyParser = require('body-parser');
+
 const LocationController = require('./Controllers/LocationController');
+const Db = require('./db-connection');
+
+const app = express();
+
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   return res.send('<h1>Gnome Garden</h1>');
