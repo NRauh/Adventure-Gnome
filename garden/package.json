@@ -1,0 +1,17 @@
+{
+  "name": "garden",
+  "version": "0.1.0",
+  "description": "Gnome tracking web server",
+  "main": "index.js",
+  "author": "Nate Rauh",
+  "license": "MIT",
+  "scripts": {
+    "dev-server": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.13.3"
+  }
+}
