@@ -2,8 +2,15 @@ const Location = require('../Models/Location');
 
 module.exports = {
   getLocations: function(req, res) {
-    return res.json({
-      locations: []
+    Location.findAll().then((locations) => {
+      return res.json({
+        locations: locations
+      });
+    }).catch(() => {
+      res.status(500);
+      return res.json({
+        err: 'Unable to retrieve locations'
+      });
     });
   },
 
