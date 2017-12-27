@@ -13,10 +13,13 @@ const Location = db.define('location', {
   }
 });
 
-Location.sync({force: true}).then(() => {
-  console.log('Location model added');
-}).catch((err) => {
-  console.log('Error creating Location model:', err);
-});
+// Location.sync({force: true}).then(() => {
+//   console.log('Location model added');
+// }).catch((err) => {
+//   console.log('Error creating Location model:', err);
+// });
 
-module.exports = Location;
+// module.exports = Location;
+module.exports = {
+  findAll: () => {}
+}

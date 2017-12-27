@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev-server": "nodemon index.js",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "body-parser": "^1.18.2",

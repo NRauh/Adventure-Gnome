@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const LocationController = require('./Controllers/LocationController');
-const Db = require('./db-connection');
+// const Db = require('./db-connection');
 
 const app = express();
 
